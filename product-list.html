@@ -1,0 +1,565 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Big Market</title>
+
+    <link rel="stylesheet" href="public/bower_components/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="public/bower_components/bootstrap/dist/css/bootstrap-theme.min.css">
+    <link rel="stylesheet" href="public/bower_components/font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="public/bower_components/font-awesome/fonts/fontawesome-webfont.woff2">
+    <link rel="stylesheet" href="public/css/style.css">
+    <link rel="stylesheet" href="public/css/product-list.css">
+</head>
+<body>
+    <!-- header -->
+    <header>
+        <div id="header-top">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-5 header-top-left">
+                        <div class="col-md-5 info-email">
+                            <span>
+                                <i class="glyphicon glyphicon-envelope"></i>
+                                <span>run01@runtime.vn</span>
+                            </span>
+                        </div>
+                        <div class="col-md-7 info-phone">
+                            <span>
+                                <i class="glyphicon glyphicon-earphone"></i>
+                                <span>0908 77 00 95</span>
+                            </span>
+                        </div>
+                    </div>
+
+                    <div class="col-md-7 header-top-right navbar-form navbar-right">
+                        <span class="account-control">
+                            <a href="#">Đăng nhập</a>
+                            <a href="">/</a>
+                            <a href="#">Đăng kí</a>
+                        </span>
+                        <span class="search-wrapper">
+                            <input type="text" name="search" placeholder="Tìm kiếm ...">
+                            <i class="glyphicon glyphicon-search"></i>
+                        </span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="header-main">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-10 menu-wrapper">
+                        <nav class="navbar navbar-default">
+                            <div class="navbar-header">
+                                <button type="button" class="navbar-toggle" 
+                                    data-toggle="collapse" 
+                                    data-target="#menu">
+                                    <span class="sr-only">Toggle navigation</span>
+                                    <span class="icon-bar"></span>
+                                    <span class="icon-bar"></span>
+                                    <span class="icon-bar"></span>
+                                </button>
+
+                                <div class="logo-wrapper">
+                                    <div class="logo">
+                                        <a href="index.html" class="navbar-brand">
+                                            <img src="public/images/logo/logo.png" alt="">
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="navbar-collapse collapse" id="menu">
+                                <ul class="nav navbar-nav navbar-right">
+                                    <li><a href="index.html">Trang chủ</a></li>
+                                    <li><a href="#">Giới thiệu</a></li>
+                                    <li class="dropdown menu-products">
+                                        <a href="product-list.html" class="dropdown-toggle" 
+                                            data-toggle="dropdown" 
+                                            role="button" aria-haspopup="true">
+                                            Sản phẩm
+                                            <span class="glyphicon glyphicon-chevron-down">
+                                            </span>
+                                        </a>
+                                        <ul class="dropdown-menu sub-menu-products">
+                                            <li><a href="#">Mỹ phẩm</a></li>
+                                            <li><a href="#">Thời trang</a></li>
+                                            <li><a href="#">Nội thất</a></li>
+                                        </ul>
+                                    </li>
+                                    <li><a href="#">Tin tức</a></li>
+                                    <li><a href="#">Liên hệ</a></li>
+                                </ul>
+                            </div>
+                        </nav>
+                    </div>
+
+                    <div class="col-md-2 cart-wrapper">
+                        <div class="cart">
+                            <a href="#"><i class="glyphicon glyphicon-shopping-cart"></i></a>
+                            <a href="#"><span>Giỏ hàng: 0</span></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header><!-- /header -->
+    
+    <!-- product-list-content -->
+    <div class="col-md-12 product-list-main">
+        <div class="container">
+            <div class="col-md-12 product-list-top">
+                <ul>
+                    <li class="home"><a href="index.html">Trang chủ</a></li>
+                    <li class="icon">>></li>
+                    <li class="product"><a href="#">Sản phẩm</a></li>
+                </ul>
+            </div>
+            <!-- main-content -->
+            <div class="col-md-12 main-content">
+                <h4 class="title">Sản phẩm</h4>
+                <!-- sort-wrapper -->
+                <div class="sort-wrapper">
+                    <div class="row">
+                        <div class="col-md-4">
+                            <ul class="col-md-4 display">
+                                <li><a href="#"><i class="fa fa-th-large"></i></a></li>
+                                <li><a href="#"><i class="fa fa-th-list"></i></a></li>
+                            </ul>
+
+                            <div class="col-md-8 select-box-product">
+                                <span>Sản phẩm/trang</span>
+                                <span>
+                                    <select name="">
+                                        <option value="">10</option>
+                                        <option value="">20</option>
+                                        <option value="">50</option>
+                                        <option value="">100</option>
+                                    </select>
+                                </span>
+                            </div>
+                        </div>
+
+                        <div class="col-md-8 select-box-sort">
+                            <span>Sắp xếp theo</span>
+                            <span>
+                                <select name="">
+                                    <option value="">Giá tăng dần</option>
+                                    <option value="">Giá giảm dần</option>
+                                </select>
+                            </span>
+                        </div>
+                    </div>
+                </div><!-- /sort-wrapper -->
+                
+                <!-- content-product-list -->
+                <div class="content-product-list">
+                    <div class="row">
+                        <!-- product-item -->
+                        <div class="col-md-3 product-item">
+                            <div class="image">
+                                <img src="public/images/product/ao-somi-2_master.jpg" 
+                                    alt="" class="img-responsive">
+                                <div class="product-label">
+                                    <span class="onsale">HOT</span>
+                                </div>
+                            </div>
+                            <div class="info">
+                                <a href="#">
+                                    <span class="product-name">Áo sơ mi nữ VNXK</span>
+                                </a>
+                                <div class="product-price">
+                                    <ins>280.000<span class="unit">đ</span></ins>
+                                    <del><span class="unit"></span></del>
+                                </div>
+                            </div>
+                        </div><!--/product-item -->
+
+                        <!-- product-item -->
+                        <div class="col-md-3 product-item">
+                            <div class="image">
+                                <img src="public/images/product/ao-belike1_master.jpg" 
+                                    alt="" class="img-responsive">
+                                <div class="product-label">
+                                    <span class="onsale">-52%</span>
+                                </div>
+                            </div>
+                            <div class="info">
+                                <a href="#">
+                                    <span class="product-name">Áo thun nữ Belike</span>
+                                </a>
+                                <div class="product-price">
+                                    <ins>95.200<span class="unit">đ</span></ins>
+                                    <del>200.000<span class="unit">đ</span></del>
+                                </div>
+                            </div>
+                        </div><!--/product-item -->
+
+                        <!-- product-item -->
+                        <div class="col-md-3 product-item">
+                            <div class="image">
+                                <img src="public/images/product/ao-yem-1_master.jpg" 
+                                    alt="" class="img-responsive">
+                                <div class="product-label">
+                                    <span class="onsale">HOT</span>
+                                </div>
+                            </div>
+                            <div class="info">
+                                <a href="#">
+                                    <span class="product-name">Áo kiểu nữ cổ yếm</span>
+                                </a>
+                                <div class="product-price">
+                                    <ins>190.000<span class="unit">đ</span></ins>
+                                    <del><span class="unit"></span></del>
+                                </div>
+                            </div>
+                        </div><!--/product-item -->
+
+                        <!-- product-item -->
+                        <div class="col-md-3 product-item">
+                            <div class="image">
+                                <img src="public/images/product/1200_6_451_master.jpg" 
+                                    alt="" class="img-responsive">
+                                <div class="product-label">
+                                    <span class="onsale">-25%</span>
+                                </div>
+                            </div>
+                            <div class="info">
+                                <a href="#">
+                                    <span class="product-name">Bikini bi áo lửng</span>
+                                </a>
+                                <div class="product-price">
+                                    <ins>450.000<span class="unit">đ</span></ins>
+                                    <del>600.000<span class="unit">đ</span></del>
+                                </div>
+                            </div>
+                        </div><!--/product-item -->
+
+                        <!-- product-item -->
+                        <div class="col-md-3 product-item">
+                            <div class="image">
+                                <img src="public/images/product/pr23_d88c715b-a920-42e1-613e-7d7ba1317762_master.jpg" 
+                                    alt="" class="img-responsive">
+                                <div class="product-label">
+                                    <span class="onsale">-17%</span>
+                                </div>
+                            </div>
+                            <div class="info">
+                                <a href="#">
+                                    <span class="product-name">Son môi itachi</span>
+                                </a>
+                                <div class="product-price">
+                                    <ins>500.000<span class="unit">đ</span></ins>
+                                    <del>600.000<span class="unit">đ</span></del>
+                                </div>
+                            </div>
+                        </div><!--/product-item -->
+
+                        <!-- product-item -->
+                        <div class="col-md-3 product-item">
+                            <div class="image">
+                                <img src="public/images/product/pr9_80450716-2b66-4b4b-76ed-5c1534a804fa_master.jpg" 
+                                    alt="" class="img-responsive">
+                                <div class="product-label">
+                                    <span class="onsale">-50%</span>
+                                </div>
+                            </div>
+                            <div class="info">
+                                <a href="#">
+                                    <span class="product-name">Mascara dầy và cong</span>
+                                </a>
+                                <div class="product-price">
+                                    <ins>50.000<span class="unit">đ</span></ins>
+                                    <del>100.000<span class="unit">đ</span></del>
+                                </div>
+                            </div>
+                        </div><!--/product-item -->
+
+                        <!-- product-item -->
+                        <div class="col-md-3 product-item">
+                            <div class="image">
+                                <img src="public/images/product/2_44_90_master.jpg" 
+                                    alt="" class="img-responsive">
+                                <div class="product-label">
+                                    <span class="onsale">-50%</span>
+                                </div>
+                            </div>
+                            <div class="info">
+                                <a href="#">
+                                    <span class="product-name">Áo dài cách tân</span>
+                                </a>
+                                <div class="product-price">
+                                    <ins>169.000<span class="unit">đ</span></ins>
+                                    <del><span class="unit"></span></del>
+                                </div>
+                            </div>
+                        </div><!--/product-item -->
+
+                        <!-- product-item -->
+                        <div class="col-md-3 product-item">
+                            <div class="image">
+                                <img src="public/images/product/1200_17_67_master.jpg" 
+                                    alt="" class="img-responsive">
+                                <div class="product-label">
+                                    <span class="onsale">HOT</span>
+                                </div>
+                            </div>
+                            <div class="info">
+                                <a href="#">
+                                    <span class="product-name">Áo thun nữ Love Heart</span>
+                                </a>
+                                <div class="product-price">
+                                    <ins>250.000<span class="unit">đ</span></ins>
+                                    <del><span class="unit"></span></del>
+                                </div>
+                            </div>
+                        </div><!--/product-item -->
+
+                        <!-- product-item -->
+                        <div class="col-md-3 product-item">
+                            <div class="image">
+                                <img src="public/images/product/pr10_18fd8cae-14f6-4d70-40b5-5fde4db1df12_master.jpg" 
+                                    alt="" class="img-responsive">
+                                <div class="product-label">
+                                    <span class="onsale">-50%</span>
+                                </div>
+                            </div>
+                            <div class="info">
+                                <a href="#">
+                                    <span class="product-name">Son môi TPA-115</span>
+                                </a>
+                                <div class="product-price">
+                                    <ins>125.000<span class="unit">đ</span></ins>
+                                    <del>250.000<span class="unit">đ</span></del>
+                                </div>
+                            </div>
+                        </div><!--/product-item -->
+
+                        <!-- product-item -->
+                        <div class="col-md-3 product-item">
+                            <div class="image">
+                                <img src="public/images/product/pr12_6e6ab775-622b-43ae-43c9-08796dd0c9e2_master.jpg" 
+                                    alt="" class="img-responsive">
+                                <div class="product-label">
+                                    <span class="onsale">-50%</span>
+                                </div>
+                            </div>
+                            <div class="info">
+                                <a href="#">
+                                    <span class="product-name">Son bóng hồng</span>
+                                </a>
+                                <div class="product-price">
+                                    <ins>100.000<span class="unit">đ</span></ins>
+                                    <del>200.000<span class="unit">đ</span></del>
+                                </div>
+                            </div>
+                        </div><!--/product-item -->
+
+                        <!-- product-item -->
+                        <div class="col-md-3 product-item">
+                            <div class="image">
+                                <img src="public/images/product/pr8_master.jpg" 
+                                    alt="" class="img-responsive">
+                                <div class="product-label">
+                                    <span class="onsale">HOT</span>
+                                </div>
+                            </div>
+                            <div class="info">
+                                <a href="#">
+                                    <span class="product-name">Nước làm trắng da SG</span>
+                                </a>
+                                <div class="product-price">
+                                    <ins>200.000<span class="unit">đ</span></ins>
+                                    <del><span class="unit"></span></del>
+                                </div>
+                            </div>
+                        </div><!--/product-item -->
+
+                        <!-- product-item -->
+                        <div class="col-md-3 product-item">
+                            <div class="image">
+                                <img src="public/images/product/pr11_40e951b1-7be3-4f65-4bb8-fc9c1902e6d1_master.jpg" 
+                                    alt="" class="img-responsive">
+                                <div class="product-label">
+                                    <span class="onsale">-11%</span>
+                                </div>
+                            </div>
+                            <div class="info">
+                                <a href="#">
+                                    <span class="product-name">Phấn trang điểm AUG</span>
+                                </a>
+                                <div class="product-price">
+                                    <ins>400.000<span class="unit">đ</span></ins>
+                                    <del>450.000<span class="unit">đ</span></del>
+                                </div>
+                            </div>
+                        </div><!--/product-item -->
+                    </div>
+                </div><!-- /content-product-list -->
+            </div><!--/main-content -->
+        </div>
+    </div><!-- /product-list-content -->
+
+    <!-- slider-logo -->
+    <div class="col-md-12 slider-logo">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-2 col-xs-4">
+                    <img src="public/images/logo/partner_img_1.png" 
+                        alt="" class="img-responsive">
+                </div>
+                <div class="col-md-2 col-xs-4">
+                    <img src="public/images/logo/partner_img_2.png" 
+                        alt="" class="img-responsive">
+                </div>
+                <div class="col-md-2 col-xs-4">
+                    <img src="public/images/logo/partner_img_3.png" 
+                        alt="" class="img-responsive">
+                </div>
+                <div class="col-md-2 col-xs-4">
+                    <img src="public/images/logo/partner_img_4.png" 
+                        alt="" class="img-responsive">
+                </div>
+                <div class="col-md-2 col-xs-4">
+                    <img src="public/images/logo/partner_img_5.png" 
+                        alt="" class="img-responsive">
+                </div>
+                <div class="col-md-2 col-xs-4">
+                    <img src="public/images/logo/partner_img_6.png" 
+                        alt="" class="img-responsive">
+                </div>
+            </div>
+        </div>
+    </div><!-- /slider-logo -->
+    
+   <!--  footer -->
+    <footer class="footer">
+        <div class="col-md-12 footer-top">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-4 hrv_sp">
+                        <div class="hrv-icon">
+                            <img src="public/images/icon/support_img_1.png" alt=""
+                                class="img-responsive">
+                        </div>
+                        <div class="hrv-text">
+                            <h4>24/7</h4>
+                            <p>Hỗ trợ miễn phí</p>
+                        </div>
+                    </div>
+
+                    <div class="col-md-4 hrv_sp middle">
+                        <div class="hrv-icon">
+                            <img src="public/images/icon/support_img_2.png" alt=""
+                                class="img-responsive">
+                        </div>
+                        <div class="hrv-text">
+                            <h4>100% hoàn tiền</h4>
+                            <p>Bảo hành</p>
+                        </div>
+                    </div>
+
+                    <div class="col-md-4 hrv_sp">
+                        <div class="hrv-icon">
+                            <img src="public/images/icon/support_img_3.png" alt=""
+                                class="img-responsive">
+                        </div>
+                        <div class="hrv-text">
+                            <h4>Miễn phí Shipping</h4>
+                            <p>Trên 5 đơn hàng</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div><!-- /footer-top -->
+        
+        <!-- footer-content -->
+        <div class="col-md-12 footer-content">
+            <div class="container">
+                <div class="col-md-3">
+                    <h3 class="heading-title">
+                        Về chúng tôi
+                    </h3>
+                    <ul>
+                        <li><a href="#">Giới thiệu</a></li>
+                        <li><a href="#">Giao hàng - Đổi trả</a></li>
+                        <li><a href="#">Chính sách bảo mật</a></li>
+                        <li><a href="#">Liên hệ</a></li>
+                    </ul>
+                </div>
+
+                <div class="col-md-3">
+                    <h3 class="heading-title">
+                        Trợ giúp
+                    </h3>
+                    <ul>
+                        <li><a href="#">Hướng dẫn mua hàng</a></li>
+                        <li><a href="#">Hướng dẫn thanh toán</a></li>
+                        <li><a href="#">Tài khoản giao dịch</a></li>
+                    </ul>
+                </div>
+
+                <div class="col-md-3">
+                    <h3 class="heading-title">
+                        Kết nối với chúng tôi
+                    </h3>
+                    <ul>
+                        <li>
+                            <a href="#">
+                                <i class="fa fa-facebook"></i>
+                                <span>Facebook</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <i class="fa fa-google-plus"></i>
+                                <span>Google Plus</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <i class="fa fa-twitter"></i>
+                                <span>Twitter</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <i class="fa fa-flickr"></i>
+                                <span>Flickr</span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="col-md-3">
+                    <h3 class="heading-title">HÃY ĐẾN VỚI CHÚNG TÔI</h3>
+                </div>
+            </div>
+        </div><!-- /footer-content -->
+
+        <div class="col-md-12 footer-bottom">
+            <div class="container">
+                <div class="col-md-6">
+                    <p><a href="#">Copyright © 2016 Big Market. Powered by RUNTIME.VN</a></p>
+                </div>
+
+                <div class="col-md-6">
+                    <p class="pull-right">
+                        <img src="public/images/icon/payment-logo.png" alt="">
+                    </p>
+                </div>
+            </div>
+        </div>
+    </footer><!-- footer -->
+
+    <script src="public/bower_components/jquery/dist/jquery.min.js"></script>
+    <script src="public/bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+</body>
+</html>

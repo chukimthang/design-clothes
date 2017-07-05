@@ -123,6 +123,10 @@ li {
     box-shadow: none;
 }
 
+.menu-products:hover .sub-menu-products {
+    display: block;
+}
+
 .header-main .menu-wrapper a:hover {
     background: #ffffff;
 }
