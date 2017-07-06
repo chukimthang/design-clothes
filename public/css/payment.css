@@ -1,0 +1,91 @@
+.payment-main {
+    padding-top: 40px;
+}
+
+.payment-content .box-title h4 {
+    margin-top: 0;
+    padding: 10px;
+    background-color: #7aaedd;
+    font-size: 13px;
+    font-weight: bold;
+    color: #fff;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+}
+
+.payment-content .box-info h4 {
+    margin-left: 5px;
+    text-transform: uppercase;
+    font-size: 15px;
+    font-weight: bold;
+    color: #2c3e50;
+    margin-bottom: 20px;
+}
+
+.payment-content .box-info {
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.payment-content .payment-info .payment-info-content {
+    border: 1px solid #bfbfbf;
+}
+
+.payment-content .box-info .item{
+    border-bottom: 1px solid #bfbfbf;
+    overflow: hidden;
+    padding: 10px 0px 10px 0px;
+}
+
+.payment-content .box-info .total-price {
+    font-weight: bold;
+    padding: 10px 0px 30px 0px;
+    font-size: 16px;
+}
+
+.payment-content .box-info .total-price span.pull-left {
+    text-transform: uppercase;
+}
+
+.payment-content .box-info .item div.pull-left img {
+    width: 50px;
+    height: 55px;
+    float: left;
+}
+
+.payment-content .box-info .item div.pull-right ins {
+    color: #7aaedd;
+    text-decoration: none;
+}
+
+.payment-content .box-info .total-price span.pull-right ins {
+    text-decoration: none;
+    color: #7aaedd;
+}
+
+.payment-content .box-info .unit {
+    text-decoration: underline;
+}
+
+.payment-content .box-info .payment-method {
+    margin-bottom: 20px;
+}
+
+.payment-content .box-info .button-payment {
+    text-align: right;
+    margin-bottom: 30px;
+}
+
+.payment-content .box-info .button-payment a{
+    padding: 15px 20px;
+    background-color: #3f3f3f;
+    color: #ffffff;
+    border-color: #3f3f3f;
+}
+
+.payment-content .box-info .button-payment a:hover {
+    background-color: #7aaedd;
+    color: #ffffff;
+    border-color: #7aaedd;
+    text-decoration: none;
+}

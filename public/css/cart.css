@@ -1,0 +1,127 @@
+.cart-main {
+    padding: 50px 10px;
+}
+
+/* cart-top */
+.cart-top {
+    margin-bottom: 30px;
+}
+
+.cart-top ul li {
+    float: left;
+    margin-right: 10px;
+}
+
+.cart-top ul li.home a {
+    color: #aaaaaa;
+}
+
+.cart-top ul li.home a:hover {
+    text-decoration: none;
+    color: red;
+}
+
+.cart-top ul li.product a {
+    color: #3f3f3f;
+    font-weight: bold;
+}
+
+.cart-top ul li.product a:hover {
+    text-decoration: none;
+}
+
+.cart-top ul li.icon {
+    font-weight: bold;
+    color: #aaaaaa;
+}
+
+.cart-top h3.title {
+    text-transform: uppercase;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    color: #7aaedd;
+    border-bottom: 1px solid #EAE8E8;
+    padding-bottom: 10px;
+}
+
+/* main-content */
+.main-content {
+    margin-top: 20px;
+}
+
+table.list-item {
+    background-color: #ffffff;
+}
+
+table.list-item thead {
+    background-color: #7aaedd;
+    text-transform: uppercase;
+    color: #fff;
+}
+
+table.list-item thead th {
+    height: 40px;
+    padding-left: 20px;
+}
+
+table.list-item tbody tr td {
+    height: 80px;
+    padding-left: 20px;
+}
+
+table.list-item tbody tr td h5.name {
+    font-weight: bold;
+}
+
+table.list-item tbody tr td .price {
+    color: #7aaedd;
+    font-weight: bold;
+}
+
+table.list-item tbody tr td input {
+    padding: 3px 5px;
+}
+
+table.list-item tbody tr td .glyphicon-trash {
+    color: #f26522;
+}
+
+.total-price span.text {
+    font-weight: bold;
+    margin-right: 15px;
+    font-size: 16px;
+}
+
+.total-price span.price {
+    color: #7aaedd;
+    font-size: 24px;
+}
+
+.main-content .box-action .checkout {
+    padding: 15px 20px;
+    background-color: #3f3f3f;
+    color: #ffffff;
+    border-color: #3f3f3f;
+}
+
+.main-content .box-action .checkout:hover {
+    background-color: #7aaedd;
+    color: #ffffff;
+    border-color: #7aaedd;
+    text-decoration: none;
+}
+
+.main-content .box-action .buy-continue {
+   display: inline-block;
+    margin-top: 20px;
+    margin-left: 20px;
+    border: 2px solid #e8e8e8;
+    padding: 12px 20px;
+    color: #3f3f3f;
+}
+
+.main-content .box-action .buy-continue:hover {
+    text-decoration: none;
+    border-color: #7aaedd;
+    color: #7aaedd;
+}
