@@ -1,5 +1,6 @@
 .payment-main {
     padding-top: 40px;
+    margin-bottom: 50px;
 }
 
 .payment-content .box-title h4 {
@@ -25,6 +26,10 @@
 .payment-content .box-info {
     margin-left: 10px;
     margin-right: 10px;
+}
+
+.payment-content .payment-info {
+    margin-bottom: 20px;
 }
 
 .payment-content .payment-info .payment-info-content {
