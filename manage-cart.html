@@ -14,7 +14,7 @@
     <link rel="stylesheet" href="public/bower_components/font-awesome/css/font-awesome.min.css">
     <link rel="stylesheet" href="public/bower_components/font-awesome/fonts/fontawesome-webfont.woff2">
     <link rel="stylesheet" href="public/css/style.css">
-    <link rel="stylesheet" href="public/css/product-detail.css">
+    <link rel="stylesheet" href="public/css/cart.css">
 </head>
 <body>
     <!-- header -->
@@ -88,7 +88,7 @@
                                             <span class="glyphicon glyphicon-chevron-down">
                                             </span>
                                         </a>
-                                        <ul class="dropdown-menu dropdown-menu-left 
+                                        <ul class="dropdown-menu dropdown-menu-left
                                             sub-menu-products">
                                             <li><a href="#">Mỹ phẩm</a></li>
                                             <li><a href="#">Thời trang</a></li>
@@ -104,9 +104,8 @@
 
                     <div class="col-md-2 cart-wrapper">
                         <div class="cart">
-                            <a href="manage-cart.html">
-                                <i class="glyphicon glyphicon-shopping-cart"></i></a>
-                            <a href="manage-cart.html"><span>Giỏ hàng: 0</span></a>
+                            <a href="#"><i class="glyphicon glyphicon-shopping-cart"></i></a>
+                            <a href="#"><span>Giỏ hàng: 0</span></a>
                         </div>
                     </div>
                 </div>
@@ -114,205 +113,77 @@
         </div>
     </header><!-- /header -->
     
-    <!-- product-detail-main -->
-    <div class="col-md-12 product-detail-main">
+    <!-- cart-main -->
+    <div class="col-md-12 cart-main">
         <div class="container">
-            <!-- col-md-3 -->
-            <div class="col-md-3">
-               <!--  promotion -->
-                <div class="promotion">
-                    <div class="box-title">
-                        <p align="center">Sản phẩm khuyến mại</p>
-                    </div>
+            <div class="cart-top">
+                <ul class="col-md-12">
+                    <li class="home"><a href="index.html">Trang chủ</a></li>
+                    <li class="icon">>></li>
+                    <li class="product"><a href="#">Giỏ hàng</a></li>
+                </ul>
+                <h3 class="col-md-12 title">Giỏ hàng của tôi</h3>
+            </div>
+            <!-- main-content -->
+            <div class="col-md-12 main-content">
+               <table class="table table-responsive list-item" width="100%">
+                   <thead>
+                       <tr>
+                           <th>Sản phẩm</th>
+                           <th>Hình ảnh</th>
+                           <th>Giá</th>
+                           <th>Số lượng</th>
+                           <th>Thành tiền</th>
+                           <th></th>
+                       </tr>
+                   </thead>
+                   <tbody>
+                       <tr>
+                           <td><h5 class="name">Áo thun nữ Belike</h5></td>
+                            <td><img src="public/images/product/ao-belike1_master.jpg" 
+                                alt="" width="60px" height="65px"></td>
+                            <td><span class="price">119,000đ</span></td>
+                            <td><input type="number" value="1" class="tc item-quantity 
+                                ng-valid ng-dirty ng-valid-number ng-touched" 
+                                ng-model="InputQuantity" ng-init="InputQuantity=1" 
+                                min="0" max="100"></td>
+                            <td><span class="price">119,000đ</span></td>
+                            <td><a href="#">
+                                <span class="glyphicon glyphicon-trash"></span></a></td>
+                       </tr>
 
-                    <div class="list-item">
-                        <div class="col-md-12 col-xs-6 box-item">
-                            <div class="row">
-                                <div class="col-md-5 product-image">
-                                    <a href="#">
-                                        <img src="public/images/product/ao-belike1_master.jpg" 
-                                        alt="" class="img-responsive">
-                                    </a>
-                                </div>
-                                <div class="col-md-7 product-info">
-                                    <a href="#">
-                                        <span class="product-name">Áo thun nữ Belike</span>
-                                    </a>
-                                    <div class="product-price">
-                                        <del>200.000<span class="unit">đ</span></del>
-                                        <ins>95.200<span class="unit">đ</span></ins>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
+                       <tr>
+                           <td><h5 class="name">Áo kiểu nữ cổ yếm </h5></td>
+                            <td><img src="public/images/product/ao-yem-1_master.jpg" 
+                                alt="" width="60px" height="65px"></td>
+                            <td><span class="price">119,000đ</span></td>
+                            <td><input type="number" value="1" class="tc item-quantity 
+                                ng-valid ng-dirty ng-valid-number ng-touched" 
+                                ng-model="InputQuantity" ng-init="InputQuantity=1" 
+                                min="0" max="100"></td>
+                            <td><span class="price">119,000đ</span></td>
+                            <td><a href="#">
+                                <span class="glyphicon glyphicon-trash"></span></a></td>
+                       </tr>
+                   </tbody>
+               </table>
 
-                        <div class="col-md-12 col-xs-6 box-item">
-                            <div class="row">
-                                <div class="col-md-5 product-image">
-                                    <a href="#">
-                                        <img src="public/images/product/1200_6_451_master.jpg" 
-                                        alt="" class="img-responsive">
-                                    </a>
-                                </div>
-                                <div class="col-md-7 product-info">
-                                    <a href="#">
-                                        <span class="product-name">Bikini bi áo lửng</span>
-                                    </a>
-                                    <div class="product-price">
-                                        <del>600.000<span class="unit">đ</span></del>
-                                        <ins>450.200<span class="unit">đ</span></ins>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
+               <div class="total-price" align="right">
+                   <span class="text">Tổng thanh toán: </span>
+                   <span class="price">238,000đ</span>
+               </div>
 
-                        <div class="col-md-12 col-xs-6 box-item">
-                            <div class="row">
-                                <div class="col-md-5 product-image">
-                                    <a href="#">
-                                        <img src="public/images/product/pr9_80450716-2b66-4b4b-76ed-5c1534a804fa_master.jpg" 
-                                        alt="" class="img-responsive">
-                                    </a>
-                                </div>
-                                <div class="col-md-7 product-info">
-                                    <a href="#">
-                                        <span class="product-name">Son môi itachi</span>
-                                    </a>
-                                    <div class="product-price">
-                                        <del>600.000<span class="unit">đ</span></del>
-                                        <ins>500.000<span class="unit">đ</span></ins>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="col-md-12 col-xs-6 box-item">
-                            <div class="row">
-                                <div class="col-md-5 product-image">
-                                    <a href="#">
-                                        <img src="public/images/product/pr23_d88c715b-a920-42e1-613e-7d7ba1317762_master.jpg" 
-                                        alt="" class="img-responsive">
-                                    </a>
-                                </div>
-                                <div class="col-md-7 product-info">
-                                    <a href="#">
-                                        <span class="product-name">Mascara dầy và cong</span>
-                                    </a>
-                                    <div class="product-price">
-                                        <del>100.000<span class="unit">đ</span></del>
-                                        <ins>50.000<span class="unit">đ</span></ins>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div><!-- /promotion -->
-            </div><!-- /col-md-3 -->
-            
-            <!--col-md-9 -->
-            <div class="col-md-9">
-                <!-- product-detail-top -->
-                <div class="col-md-12 product-detail-top">
-                    <ul>
-                        <li class="home"><a href="index.html">Trang chủ</a></li>
-                        <li class="icon">>></li>
-                        <li class="home"><a href="product-list.html">Sản phẩm</a></li>
-                        <li class="icon">>></li>
-                        <li class="product"><a href="#">Áo thun nữ Belike</a></li>
-                    </ul>
-                </div><!--/product-detail-top -->
-
-                <!-- product-detal-content -->
-                <div class="product-detal-content">
-                    <!-- product-image -->
-                    <div class="col-md-6 product-image">
-                        <div class="row">
-                            <img src="public/images/product/ao-belike1_master.jpg" 
-                                alt="" class="img-responsive" id="large-img">
-                            <div class="sub-images" id ="sub-images">
-                                <img src="public/images/product/ao-belike1_master.jpg"
-                                    alt="" class="img-item">
-                                <img src="public/images/product/ao-belike2_master.jpg"
-                                    alt="" class="img-item">
-                                <img src="public/images/product/ao-belike3_master.jpg"
-                                    alt="" class="img-item">
-                            </div>
-                        </div>
-                    </div><!--/product-image -->
-                    
-                    <!-- product-info -->
-                    <div class="col-md-6 product-info">
-                        <h3 class="title">Áo sơ mi nữ VNXK</h3>
-                        <div class="product-price">
-                            <ins>280.000<span class="unit">đ</span></ins>
-                            <del>300.000<span class="unit">đ</span></del>
-                        </div>
-                        <div class="description-sort">
-                            Trẻ trung và cuốn hút theo phong cách đường phố thu-đông với áo 
-                            nỉ thêu hình động vật của thương hiệu Asos.- Chất liệu cotton 
-                            pha- Cổ 3cm- Tay dài, suông- Không lót trong- Màu sắc: Xám.
-                            Hướng dẫn sử dụng:- Giặt bằng tay với nhiệt độ không quá 30°C- 
-                            Không được tẩy- Không được sấy khô- Ủi với nhiệt độ...
-                        </div>
-
-                        <div class="item-quantity">
-                            <span>Số lượng</span>
-                            <span>
-                                <input type="number" value="1" class="tc item-quantity 
-                                    ng-valid ng-dirty ng-valid-number ng-touched" 
-                                    ng-model="InputQuantity" ng-init="InputQuantity=1"
-                                    min="0" max="100"/>
-                            </span>
-                        </div>
-
-                        <div class="buy-wrapper">
-                            <a href="manage-cart.html" class="add-to-cart">
-                                <i class="fa fa-shopping-cart"></i>
-                                Thêm giỏ hàng
-                            </a>
-                            <a href="#" class="buy-now">
-                                <i class="fa fa-dollar"></i>
-                                Mua ngay
-                            </a>
-                        </div>
-                    </div><!-- /product-info -->
-                    
-                    <!-- product-tabs -->
-                    <div class="col-md-12 product-tabs">
-                        <div class="row">
-                            <ul class="nav nav-tabs">
-                                <li class="active"><a href="#detail">
-                                    Chi tiết sản phẩm</a></li>
-                                <li><a href="#comment">
-                                    Bình luận</a></li>
-                            </ul>
-
-                            <div class="tab-content">
-                                <div id="detail" class="tab-item">
-                                    <p>Trẻ trung và cuốn hút theo phong cách đường phố thu-đông
-                                        với áo nỉ thêu hình động vật của thương hiệu Asos.</p>
-                                    <p>- Chất liệu cotton pha</p>
-                                    <p>- Cổ 3cm</p>
-                                    <p>- Tay dài, suông</p>
-                                    <p>- Không lót trong</p>
-                                    <p>- Màu sắc: Xám</p>
-                                    <p>Hướng dẫn sử dụng:</p>
-                                    <p>- Giặt bằng tay với nhiệt độ không quá 30°C</p>
-                                    <p>- Không được tẩy</p>
-                                    <p>- Không được sấy khô</p>
-                                    <p>- Ủi với nhiệt độ không quá 110°C</p>
-                                    <p>- Giặt khô nhẹ nhàng bằng chất Perchloroethylene</p>
-                                </div>
-                                <div id="comment" class="tab-item">
-                                    Không có bình luận nào
-                                </div>
-                            </div>
-                        </div>
-                    </div><!--/product-tabs -->
-                </div><!--/product-detal-content -->
-            </div><!--/col-md-9 -->
+                <div class="box-action" align="right">
+                    <a href="product-list.html" class="buy-continue">
+                        Tiếp tục mua hàng
+                    </a>
+                    <a href="payment.html" class="checkout">
+                        Tiến hành thanh toán
+                    </a>
+                </div>
+            </div><!--/main-content -->
         </div>
-    </div><!-- /product-detail-main -->
+    </div><!-- /cart-main -->
 
     <!-- slider-logo -->
     <div class="col-md-12 slider-logo">
@@ -468,6 +339,5 @@
 
     <script src="public/bower_components/jquery/dist/jquery.min.js"></script>
     <script src="public/bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
-    <script src="public/js/main.js"></script>
 </body>
 </html>

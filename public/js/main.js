@@ -25,4 +25,20 @@ $(document).ready(function(){
  
   // Active tab đầu tiên khi trang web được chạy
   activeTab($('.nav-tabs li:first-child'));
+
+   // Sự kiện chuột kich vào radio thanh toán thẻ
+  $("#payment_method_cheque").on("click", function() {
+    if("#payment_method_bacs:selected") {
+      $(".payment_method_bacs_model").hide();
+      $(".payment_method_cheque_model").show();
+    }
+  });
+
+  // Sự kiện kich vào radio thanh toán tại nhà
+  $("#payment_method_bacs").on("click", function() {
+    if("#payment_method_cheque:selected") {
+      $(".payment_method_bacs_model").show();
+      $(".payment_method_cheque_model").hide();
+    }
+  });
 });

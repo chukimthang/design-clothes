@@ -14,7 +14,8 @@
     <link rel="stylesheet" href="public/bower_components/font-awesome/css/font-awesome.min.css">
     <link rel="stylesheet" href="public/bower_components/font-awesome/fonts/fontawesome-webfont.woff2">
     <link rel="stylesheet" href="public/css/style.css">
-    <link rel="stylesheet" href="public/css/product-detail.css">
+    <link rel="stylesheet" href="public/css/cart.css">
+    <link rel="stylesheet" type="text/css" href="public/css/payment.css">
 </head>
 <body>
     <!-- header -->
@@ -88,7 +89,7 @@
                                             <span class="glyphicon glyphicon-chevron-down">
                                             </span>
                                         </a>
-                                        <ul class="dropdown-menu dropdown-menu-left 
+                                        <ul class="dropdown-menu dropdown-menu-left
                                             sub-menu-products">
                                             <li><a href="#">Mỹ phẩm</a></li>
                                             <li><a href="#">Thời trang</a></li>
@@ -114,205 +115,143 @@
         </div>
     </header><!-- /header -->
     
-    <!-- product-detail-main -->
-    <div class="col-md-12 product-detail-main">
+    <!-- payment-main -->
+    <div class="col-md-12 payment-main">
         <div class="container">
-            <!-- col-md-3 -->
-            <div class="col-md-3">
-               <!--  promotion -->
-                <div class="promotion">
-                    <div class="box-title">
-                        <p align="center">Sản phẩm khuyến mại</p>
-                    </div>
-
-                    <div class="list-item">
-                        <div class="col-md-12 col-xs-6 box-item">
-                            <div class="row">
-                                <div class="col-md-5 product-image">
-                                    <a href="#">
-                                        <img src="public/images/product/ao-belike1_master.jpg" 
-                                        alt="" class="img-responsive">
-                                    </a>
-                                </div>
-                                <div class="col-md-7 product-info">
-                                    <a href="#">
-                                        <span class="product-name">Áo thun nữ Belike</span>
-                                    </a>
-                                    <div class="product-price">
-                                        <del>200.000<span class="unit">đ</span></del>
-                                        <ins>95.200<span class="unit">đ</span></ins>
-                                    </div>
-                                </div>
-                            </div>
+            <div class="cart-top">
+                <ul class="col-md-12">
+                    <li class="home"><a href="index.html">Trang chủ</a></li>
+                    <li class="icon">>></li>
+                    <li class="product"><a href="#">Thanh toán</a></li>
+                </ul>
+                <h3 class="col-md-12 title">Thanh toán</h3>
+            </div>
+            <!-- payment-content -->
+            <div class="payment-content">
+                <!-- checkout-info -->
+                <div class="col-md-4 payment-info">
+                    <div class="payment-info-content">
+                        <div class="box-title">
+                            <h4>1. Địa chỉ thanh toán và giao hàng</h4>
                         </div>
-
-                        <div class="col-md-12 col-xs-6 box-item">
-                            <div class="row">
-                                <div class="col-md-5 product-image">
-                                    <a href="#">
-                                        <img src="public/images/product/1200_6_451_master.jpg" 
-                                        alt="" class="img-responsive">
-                                    </a>
-                                </div>
-                                <div class="col-md-7 product-info">
-                                    <a href="#">
-                                        <span class="product-name">Bikini bi áo lửng</span>
-                                    </a>
-                                    <div class="product-price">
-                                        <del>600.000<span class="unit">đ</span></del>
-                                        <ins>450.200<span class="unit">đ</span></ins>
-                                    </div>
-                                </div>
+                        <div class="box-info">
+                            <h4>Thông tin thanh toán</h4>
+                            <div class="form-group">
+                                <input type="text" name="name" class="form-control"
+                                    placeholder="Họ và tên">
                             </div>
-                        </div>
-
-                        <div class="col-md-12 col-xs-6 box-item">
-                            <div class="row">
-                                <div class="col-md-5 product-image">
-                                    <a href="#">
-                                        <img src="public/images/product/pr9_80450716-2b66-4b4b-76ed-5c1534a804fa_master.jpg" 
-                                        alt="" class="img-responsive">
-                                    </a>
-                                </div>
-                                <div class="col-md-7 product-info">
-                                    <a href="#">
-                                        <span class="product-name">Son môi itachi</span>
-                                    </a>
-                                    <div class="product-price">
-                                        <del>600.000<span class="unit">đ</span></del>
-                                        <ins>500.000<span class="unit">đ</span></ins>
-                                    </div>
-                                </div>
+                            <div class="form-group">
+                                <input type="text" name="phone" class="form-control"
+                                    placeholder="Số điện thoại">
                             </div>
-                        </div>
+                            <div class="form-group">
+                                <input type="text" name="email" class="form-control"
+                                    placeholder="Email">
+                            </div>
+                            <div class="form-group">
+                                <input type="text" name="address" class="form-control"
+                                    placeholder="Địa chỉ">
+                            </div>
 
-                        <div class="col-md-12 col-xs-6 box-item">
-                            <div class="row">
-                                <div class="col-md-5 product-image">
-                                    <a href="#">
-                                        <img src="public/images/product/pr23_d88c715b-a920-42e1-613e-7d7ba1317762_master.jpg" 
-                                        alt="" class="img-responsive">
-                                    </a>
-                                </div>
-                                <div class="col-md-7 product-info">
-                                    <a href="#">
-                                        <span class="product-name">Mascara dầy và cong</span>
-                                    </a>
-                                    <div class="product-price">
-                                        <del>100.000<span class="unit">đ</span></del>
-                                        <ins>50.000<span class="unit">đ</span></ins>
-                                    </div>
-                                </div>
+                            <div class="form-group">
+                                <textarea name="note" class="form-control" placeholder="Ghi chú"
+                                    rows="5"></textarea>
                             </div>
                         </div>
                     </div>
-                </div><!-- /promotion -->
-            </div><!-- /col-md-3 -->
-            
-            <!--col-md-9 -->
-            <div class="col-md-9">
-                <!-- product-detail-top -->
-                <div class="col-md-12 product-detail-top">
-                    <ul>
-                        <li class="home"><a href="index.html">Trang chủ</a></li>
-                        <li class="icon">>></li>
-                        <li class="home"><a href="product-list.html">Sản phẩm</a></li>
-                        <li class="icon">>></li>
-                        <li class="product"><a href="#">Áo thun nữ Belike</a></li>
-                    </ul>
-                </div><!--/product-detail-top -->
-
-                <!-- product-detal-content -->
-                <div class="product-detal-content">
-                    <!-- product-image -->
-                    <div class="col-md-6 product-image">
-                        <div class="row">
-                            <img src="public/images/product/ao-belike1_master.jpg" 
-                                alt="" class="img-responsive" id="large-img">
-                            <div class="sub-images" id ="sub-images">
-                                <img src="public/images/product/ao-belike1_master.jpg"
-                                    alt="" class="img-item">
-                                <img src="public/images/product/ao-belike2_master.jpg"
-                                    alt="" class="img-item">
-                                <img src="public/images/product/ao-belike3_master.jpg"
-                                    alt="" class="img-item">
-                            </div>
+                </div><!-- /payment-info -->
+                
+                <!-- payment-info -->
+                <div class="col-md-4 payment-info">
+                    <div class="payment-info-content">
+                        <div class="box-title">
+                            <h4>2. Thông tin chung</h4>
                         </div>
-                    </div><!--/product-image -->
-                    
-                    <!-- product-info -->
-                    <div class="col-md-6 product-info">
-                        <h3 class="title">Áo sơ mi nữ VNXK</h3>
-                        <div class="product-price">
-                            <ins>280.000<span class="unit">đ</span></ins>
-                            <del>300.000<span class="unit">đ</span></del>
-                        </div>
-                        <div class="description-sort">
-                            Trẻ trung và cuốn hút theo phong cách đường phố thu-đông với áo 
-                            nỉ thêu hình động vật của thương hiệu Asos.- Chất liệu cotton 
-                            pha- Cổ 3cm- Tay dài, suông- Không lót trong- Màu sắc: Xám.
-                            Hướng dẫn sử dụng:- Giặt bằng tay với nhiệt độ không quá 30°C- 
-                            Không được tẩy- Không được sấy khô- Ủi với nhiệt độ...
-                        </div>
-
-                        <div class="item-quantity">
-                            <span>Số lượng</span>
-                            <span>
-                                <input type="number" value="1" class="tc item-quantity 
-                                    ng-valid ng-dirty ng-valid-number ng-touched" 
-                                    ng-model="InputQuantity" ng-init="InputQuantity=1"
-                                    min="0" max="100"/>
-                            </span>
-                        </div>
-
-                        <div class="buy-wrapper">
-                            <a href="manage-cart.html" class="add-to-cart">
-                                <i class="fa fa-shopping-cart"></i>
-                                Thêm giỏ hàng
-                            </a>
-                            <a href="#" class="buy-now">
-                                <i class="fa fa-dollar"></i>
-                                Mua ngay
-                            </a>
-                        </div>
-                    </div><!-- /product-info -->
-                    
-                    <!-- product-tabs -->
-                    <div class="col-md-12 product-tabs">
-                        <div class="row">
-                            <ul class="nav nav-tabs">
-                                <li class="active"><a href="#detail">
-                                    Chi tiết sản phẩm</a></li>
-                                <li><a href="#comment">
-                                    Bình luận</a></li>
-                            </ul>
-
-                            <div class="tab-content">
-                                <div id="detail" class="tab-item">
-                                    <p>Trẻ trung và cuốn hút theo phong cách đường phố thu-đông
-                                        với áo nỉ thêu hình động vật của thương hiệu Asos.</p>
-                                    <p>- Chất liệu cotton pha</p>
-                                    <p>- Cổ 3cm</p>
-                                    <p>- Tay dài, suông</p>
-                                    <p>- Không lót trong</p>
-                                    <p>- Màu sắc: Xám</p>
-                                    <p>Hướng dẫn sử dụng:</p>
-                                    <p>- Giặt bằng tay với nhiệt độ không quá 30°C</p>
-                                    <p>- Không được tẩy</p>
-                                    <p>- Không được sấy khô</p>
-                                    <p>- Ủi với nhiệt độ không quá 110°C</p>
-                                    <p>- Giặt khô nhẹ nhàng bằng chất Perchloroethylene</p>
+                        <div class="box-info">
+                            <div class="item">
+                                <div class="pull-left">
+                                    <img src="public/images/product/ao-belike1_master.jpg" 
+                                        alt="" class="img-responsive">
+                                    <span>Áo thun nữ Belike x 1</span>
                                 </div>
-                                <div id="comment" class="tab-item">
-                                    Không có bình luận nào
+                                <div class="pull-right">
+                                    <ins>119,000 <span class="unit">đ</span></ins>
                                 </div>
                             </div>
+                
+                            <div class="item">
+                                <div class="pull-left">
+                                    <img src="public/images/product/ao-yem-1_master.jpg" 
+                                        alt="" class="img-responsive">
+                                    <span>Áo thun nữ Belike x 1</span>
+                                </div>
+                                <div class="pull-right">
+                                    <ins>119,000 <span class="unit">đ</span></ins>
+                                </div>
+                            </div>
+                            <div class="clearfix"></div>
+                            <div class="total-price">
+                                <span class="pull-left">Thanh toán</span>
+                                <span class="pull-right">
+                                    <ins>238,000 <span class="unit">đ</span></ins>
+                                </span>
+                            </div>
                         </div>
-                    </div><!--/product-tabs -->
-                </div><!--/product-detal-content -->
-            </div><!--/col-md-9 -->
+                    </div>
+                </div><!--/payment-info -->
+
+                <!-- payment-info -->
+                <div class="col-md-4 payment-info">
+                    <div class="payment-info-content">
+                        <div class="box-title">
+                            <h4>3. Thanh toán và vận chuyển</h4>
+                        </div>
+                        <div class="box-info">
+                            <h4>Hình thức thanh toán</h4>
+                            <div class="payment-method payment_method_bacs">
+                                <input id="payment_method_bacs" 
+                                    type="radio" class="input-radio" 
+                                    name="payment_method" value="COD" 
+                                    checked="checked" 
+                                    data-order_button_text="">
+                                <label for="payment_method_bacs">
+                                    Thanh toán khi nhận hàng </label>
+                                <div class="clearfix"></div>
+                                <div class="payment_box
+                                    payment_method_bacs_model" 
+                                    style="display: block;">
+                                    Cửa hàng sẽ gửi hàng đến địa chỉ của bạn, bạn xem hàng 
+                                    rồi thanh toán tiền cho nhân viên giao hàng
+                                </div>                   
+                            </div>
+
+                            <div class="payment-method payment_method_cheque">
+                                <input id="payment_method_cheque" 
+                                    type="radio" class="input-radio" 
+                                    name="payment_method" value="ATM"
+                                    data-order_button_text="">
+                                <label for="payment_method_cheque">
+                                    Chuyển khoản </label>
+                                <div class="clearfix"></div>
+                                <div class="payment_box
+                                    payment_method_cheque_model" 
+                                    style="display: none;">
+                                    Chuyển tiền đến tài khoản sau:
+                                    <input type="text" name="cart" 
+                                    value="" class="form-control" 
+                                    placeholder="">
+                                </div>               
+                            </div>
+
+                            <div class="button-payment">
+                                <a href="#">Đặt hàng</a>
+                            </div>    
+                        </div>
+                    </div>        
+                </div><!-- payment-info -->
+            </div><!-- /payment-content -->
         </div>
-    </div><!-- /product-detail-main -->
+    </div><!-- /payment-main -->
 
     <!-- slider-logo -->
     <div class="col-md-12 slider-logo">
@@ -465,7 +404,7 @@
             </div>
         </div>
     </footer><!-- footer -->
-
+    
     <script src="public/bower_components/jquery/dist/jquery.min.js"></script>
     <script src="public/bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
     <script src="public/js/main.js"></script>
